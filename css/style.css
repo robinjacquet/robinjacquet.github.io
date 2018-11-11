@@ -1,0 +1,69 @@
+/* taille mini de la page */
+html {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100%;
+}
+
+/* taille mini du body */
+body{font-family: 'Montserrat', sans-serif;}
+
+footer {
+      background-color: silver;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 85px;
+      width: 100%;
+      overflow: hidden;}
+
+a{
+  font-family: 'Montserrat', sans-serif;
+	text-decoration: none; color: blue;}
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:focus { text-decoration: none; }
+a:hover, a:active { text-decoration: none; }
+
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Add a  background color to the top navigation */
+.menu {
+    width: 100%;
+    background-color: silver;
+    overflow: auto;
+    height: 35px;
+}
+
+/* Style the links inside the navigation bar */
+.menu a {
+    float: left;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    width: 18%;
+    text-align: center; /* If you want the text to be centered */
+}
+
+img.profilepic{
+  height:15%;
+  width:15%;
+  border-radius:10%;
+  border: 4px solid #ddd;
+  margin: 6px;
+  float:left;
+}
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+  .menu a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+}
+/* ne semble pas marcher derrière */
