@@ -1,9 +1,13 @@
 <!DOCTYPE HTML>
 <html lang="en">
   <head>
-    <!-- Page name -->
-    <title> Robin Jacquet </title>
 
+    <!-- Required meta tags -->
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Style Sheet -->
     <link href="css/style.css" rel="stylesheet">
 
@@ -11,45 +15,181 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+    <!-- Page name -->
+    <title> Robin Jacquet </title>
 
   </head>
 <body>
 
 <!-- Header -->
-  <header>
+
+  <header id="HOME">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+      <a class="navbar-brand" href="#">
+        <img src="images/test logo.png" alt="">
+      </a>
+
+     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+       <div class="navbar-nav">
+         <a class="nav-item nav-link" href="#home">Home</a>
+         <a class="nav-item nav-link" href="#aboutme">About Me</a>
+         <a class="nav-item nav-link" href="#jobs">Jobs</a>
+         <a class="nav-item nav-link" href="#education">Education</a>
+         <a class="nav-item nav-link" href="#skills">Skills</a>
+         <a class="nav-item nav-link" href="#contact">Contact</a>
+         <a class="nav-item nav-link" href="CV/CV - Robin Jacquet - nov 2018.pdf" target="_blank" style="color: #f74d65" onmouseover="this.style.color='#b2d0f8'" onmouseout="this.style.color='#f74d65'">CV</a> <!-- CV opens in another page -->
+       </div>
+     </div>
+   </nav>
   </header>
 
-<!-- NAV BAR -->
-<nav class="menu">
-  <a href="#aboutme">About me</a>
-  <a href="#jobs">Jobs</a>
-  <a href="#education">Education</a>
-  <a href="#skills">Skills</a>
-  <a href="#contact">Contact</a>
-</nav>
+<!-- ABOUT ME -->
+<div id="aboutme" class="row">
 
-<div id="aboutme">
-<img src="images/profile.JPG" alt="profile picture" class="profilepic" />
-<h2> </br></br>Robin Jacquet</br>
-          Legal & Compliance Manager </br>
-          Looking for new Opportunities </br> </br></br></h2>
+  <div class="col-sm-4">
+    <img src="images/profile.JPG" alt="profile picture" class="profilepic" />
+  </div>
+
+  <div class="col-sm-8">
+    <h3> Hello </h3>
+       <h3><span id="textederoulant">👋</span></h3>
+  </div>
+
 </div>
 
-<div style="text-align:center">
-  <h1> Personal Website </br> Coming Soon </h1> </br>
-  <p> Code Learning In Progress</p>
+<!-- JS texte déroulant -->
+<script>
+  var texts = ["I am Robin", "A Legal & Compliance Guy", "Looking for new opportunities"];
+var count = 0;
+function changeText() {
+    $("#textederoulant").text(texts[count]);
+    count < 3 ? count++ : count = 0;
+}
+setInterval(changeText, 1500);
+</script>
+
+<!-- JOBS -->
+<div class="row">
+  <div id="jobs" class="col-sm-9">
+    <h3> JOBS </h3>
+
+    <div id="koosmik" class="container">
+      <img src="images/koosmik.JPG" alt="Koosmik" class="jobpic" />
+      <div class="overlay">
+        <div class="text">
+          <h4> Koosmik </h4>
+          <h5> Legal & Compliance Manager </h5>
+          <h6> Jan. 2018 - present </h6>
+        </div>
+      </div>
+    </div>
+
+    <div id="amundi" class="container">
+      <img src="images/amundi.JPG" alt="Amundi" class="jobpic" />
+      <div class="overlay">
+        <div class="text">
+          <h4> Amundi Luxembourg </h4>
+          <h5> Compliance Officer </h5>
+          <h6> Oct. 2015 - Dec. 2017 </h6>
+        </div>
+      </div>
+    </div>
+
+  <!--  <div id="studentjobs" class="container">
+      <img src="https://media.giphy.com/media/xT8qBv8bcQc4gcgAWA/giphy.gif" alt="StudentJobs" class="jobpic" />
+      <div class="overlay">
+        <div class="text">
+          <p>You never know when lawn mowing can come in handy </p>
+          <p> Teen Years </p>
+           </div>
+      </div>
+    </div> -->
 </div>
 
-<footer>
-  <p> <a href="https://www.linkedin.com/in/robin-jacquet" target="_blank">
-    <img alt="" src="https://s3.amazonaws.com/flashissue/dJtLdIsbRAix3zQhvygP_linkedin_icon_dark_hover-5be7d72ca83a10c0c76c32d141b0b828.png"
+<!-- skills -->
+  <div id="skills" class="col-sm-3">
+    <h3> Skills </h3>
+      <p> #Legal #Compliance </p>
+      <p> #Fintech </p>
+      <p> #Asset Mangement </p>
+      <P> #Operations </p>
+      <p> #Communication </p>
+    </br>
+    </br>
+    </br>
+
+
+    <h3> Languages </h3>
+      <p> French : Native </p>
+      <p> English: Fluent </p>
+      <p> Spanish : Working Proficiency </p>
+  </div>
+
+
+</div>
+
+<!-- Education -->
+<div class="row">
+  <div id="education" class="col-sm-9">
+    <h3> EDUCATION </h3>
+
+    <div id="HOT" class="container">
+      <h4> 2017 : M1 “Compliance – Fundamentals” </h4>
+      <h5> House of Training </h5>
+    </div>
+
+      <div id="EIBM" class="container">
+        <h4> 2014-2015 : MSc in European and International Business Management </h4>
+        <h5> Audencia Nantes & Universidad de Deusto & Bradford School of Management </h5>
+      </div>
+
+      <div id="UCL" class="container">
+        <h4> 2013-2014 : Master I in English Law / Certificate in English Legal Studies </h4>
+        <h5> University College London (Erasmus Exchange) </h5>
+      </div>
+
+      <div id="ASSAS" class="container">
+        <h4> 2010-2013 : Licence en Droit (LLB) </h4>
+        <h5> Université Paris II Panthéon-Assas </h5>
+      </div>
+    </div>
+
+
+    <!-- IT Skills -->
+    <div id="itskills" class="col-sm-3">
+      <h3> IT Skills </h3>
+      <p> learning to code </p>
+      <p> this website is proof <p>
+      <p> Otherwise : Office, Slack, Trello, Confluence...  </p>
+    </div>
+
+</div>
+
+
+
+<footer id="contact">
+  <div class="row">
+    <div class="col">
+    <p> <a href="https://www.linkedin.com/in/robin-jacquet" target="_blank">
+      <img alt="" src="https://s3.amazonaws.com/flashissue/dJtLdIsbRAix3zQhvygP_linkedin_icon_dark_hover-5be7d72ca83a10c0c76c32d141b0b828.png"
         style="height:16px; width:16px" />
-    Let's connect on LinkedIn </a> </p>
-  <p> <a href="mailto:robin.jacquet@icloud.com?">
-    <i class="material-icons"> email </i>
-     Contact me by mail </a></p>
+        Let's connect on LinkedIn </a> </p>
+    </div>
+    <div class="col">
+    <p> <a href="mailto:robin.jacquet@icloud.com?">
+      <i class="material-icons"> email </i>
+      Contact me by mail </a></p>
+    </div>
+  </div>
 </footer>
 
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 </body>
 </html>
