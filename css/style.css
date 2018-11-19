@@ -33,7 +33,12 @@ footer {
     /*  div {
         border: 1px solid #5D6063;
       } */
+#navbarNavAltMarkup {justify-content:center;}
 
+#verticalalign {
+  align-items: center;
+  display: flex;
+}
 /* Profile PIC */
 .profilepic{
   text-align: center;
