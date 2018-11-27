@@ -1,105 +1,350 @@
-
-/* STYLING BODY FOOTER ETC */
-
-
-footer {
-      position:sticky;
-      bottom: 0;
-      width: 100%;
-      height: 40px; /* Set the fixed height of the footer here */
-      line-height: 10px; /* Vertically center the text there */
-      background-color: #f5f5f5;
-      overflow:visible;
-      text-align: center;
-      }
-
-/* FONT */
-      body{
-        font-family: 'Montserrat', sans-serif;
-      }
-
-      h1, h2, h3, h4, h5, h6{
-        font-family: 'Montserrat', sans-serif;}
-
-      a{
-        font-family: 'Montserrat', sans-serif;
-      	text-decoration: none; color: blue;}
-
-      a:visited { text-decoration: none; }
-      a:hover { text-decoration: none; }
-      a:focus { text-decoration: none; }
-      a:hover, a:active { text-decoration: none; }
-
-    /*  div {
-        border: 1px solid #5D6063;
-      } */
-#navbarNavAltMarkup {justify-content:center;}
-
-#verticalalign {
-  align-items: center;
-  display: flex;
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: transparent;
 }
-/* Profile PIC */
-.profilepic{
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
+.new-version {text-align: center}
+
+.header {
+    padding: 15px 0;
+    background: white;
+    z-index: 999;
+    -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0 0 4px rgba(0,0,0,0.4);
+    box-shadow: 0 0 4px rgba(0,0,0,0.4);
+}
+
+.header h1.logo a img {
+    margin-right: 5px;
+    max-height: 55px;
+    margin-left: 180px;
+    margin-top: -6px;
+    height: 52px;
+    width: 126px;
+}
+
+
+.header .main-nav .nav .nav-item a {
+   color: #444;
+   -webkit-transition: none;
+   -moz-transition: none;
+   -ms-transition: none;
+   -o-transition: none;
+   padding: 15px 10px;
+}
+
+.header .main-nav .navbar-toggler {
+    position: absolute;
+    right: 15px;
+    top: 20px;
+}
+
+.offset-header {
+    padding-top: 95px;}
+
+    .has-pattern {
+        background-image: url(pattern/pattern.png);
+        background-repeat: repeat;
+        background-position: left top;
+            }
+    .has-pattern-1 {
+        background-image: url(pattern/pattern.png);
+        background-repeat: repeat;
+        background-position: left top;
+        background-color: #56bc94;
+        }
+
+.row {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-top: 15px;
+      margin-bottom: 5px;
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    }
+
+    p{text-align: justify;}
+
+
+/*aboutme*/
+.aboutme {
+    color: #fff;
+    padding: 40px 0;
+}
+
+.team {max-width: 90%; max-height: 90%}
+
+.profile-pic {
+  border-radius:15%;
+  border: 4px solid #ddd;
+  margin: 6px;
+  width: 460px;
+  height: 380px;
+}
+
+.job-pic {
+  width: 480px;
+  height: 240px
+}
+
+/* The overlay effect (full height and width) - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background-color:  #006699;
+  overflow: hidden;
+  width: 480px;
+  height: 240px;
+  transform: scale(0);
+  transition: .3s ease;
+}
+/* When you mouse over the container, the overlay text will "zoom" in display */
+.container:hover .overlay {
+  transform: scale(1);
+}
+/* Some text inside the overlay, which is positioned in the middle vertically and horizontally */
+.text {
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
 }
 
-      img.profilepic{
-        height:95%;
-        width:65%;
-        border-radius:10%;
-        border: 4px solid #ddd;
-        margin: 6px;
-      }
+.overflow{
+  overflow: scroll;
+  font-size:14px;
+  max-height: 240px;
+  text-align: justify;
+  ;}
+
+#center-presentationtext{text-align: center;}
+#xp {text-align: center;}
+
+/*SKILLS*/
+
+.au-dessus {top:-20px}
+.en-dessous {top:30px}
 
 
-.container{
-border: 1px /*solid #5D6063*/;
-text-align: left;
-vertical-align: middle;
+.skills .item {
+    padding: 30px 15px;
+}
+
+.text-center {
+    text-align: center!important;
+}
+
+.skills .item .heading {
+    margin-top: 0;
+    padding: 30px 15px;
+    background: #c4e7d9;
+    position: relative;
+    -webkit-border-top-right-radius: 4px;
+    -webkit-border-bottom-right-radius: 0;
+    -webkit-border-bottom-left-radius: 0;
+    -webkit-border-top-left-radius: 4px;
+    -moz-border-radius-topright: 4px;
+    -moz-border-radius-bottomright: 0;
+    -moz-border-radius-bottomleft: 0;
+    -moz-border-radius-topleft: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 4px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+.skills .item .feature-list li {
+    border-bottom: 1px solid #efefef;
+    padding: 10px;
+}
+
+.skills .item .ribbon .text {
+    position: relative;
+    left: 16px;
+    top: 16px;
+    width: 110px;
+    padding: 5px 10px;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    background-color: #3fa07a;
+    -webkit-transform: rotate(45deg) translate3d(0, 0, 0);
+    -moz-transform: rotate(45deg) translate3d(0, 0, 0);
+    -ms-transform: rotate(45deg) translate3d(0, 0, 0);
+    -o-transform: rotate(45deg) translate3d(0, 0, 0);
+}
+
+.skills .item .ribbon {
+    position: absolute;
+    top: 28px;
+    right: 12px;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.skills .item .ribbon .text:before {
+    left: 0;
+}
+.skills .item .ribbon .text:after {
+    right: 0;
+}
+.skills .item .ribbon .text:before, .skills .item .ribbon .text:after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    border-top: 3px solid #225742;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+/*Education */
+.margin-school {margin-left: 6px}
+
+
+/*skills*/
+.skills {background-color: white}
+.content {background-color: #9c9e1d1c}
+
+/*Trivia*/
+
+
+/*contact*/
+.contact {background-color: white}
+
+button {margin: 10px}
+
+
+.social-icons a {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    padding-top: 7px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    margin-right: 8px;
+    float: left;
+    font-size: 22px;
+}
+
+/* Set a specific color for each brand */
+#contact {text-align: center;}
+#linkedin{background: #3B5998; color: white;}
+#github{background: #333; color: white;}
+#envelope {background: red; color: white;}
+
+
+/*FOOTER*/
+.footer {
+  background: #444;
+  color: #fff;
+  padding: 15px 0;}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
 }
 
 
-/* JOB PICS */
-      /* Container needed to position the overlay. Adjust the width as needed */
-      .container {
-        position: relative;
-        width: 100%;
-      }
+/* COLOR */
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
 
-      /* Make the image to responsive */
-      .jobpic {
-        width: 73vw;
-        height: 50vh;
-        height: auto;
-      }
-
-      /* The overlay effect (full height and width) - lays on top of the container and over the image */
-      .overlay {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color:  #006699;
-        overflow: hidden;
-        width: 100%;
-        height: 100%;
-        transform: scale(0);
-        transition: .3s ease;
-      }
-      /* When you mouse over the container, the overlay text will "zoom" in display */
-      .container:hover .overlay {
-        transform: scale(1);
-      }
-      /* Some text inside the overlay, which is positioned in the middle vertically and horizontally */
-      .text {
-        color: white;
-        font-size: 18px;
-        position: absolute;
-        top: 50%;
-        left: 47%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-      }
-
-  /* OTHER STUFFS */
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
