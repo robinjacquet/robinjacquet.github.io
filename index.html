@@ -11,179 +11,340 @@
     <!-- Style Sheet -->
     <link href="css/style.css" rel="stylesheet">
 
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Page name -->
     <title> Robin Jacquet </title>
 
   </head>
+
 <body>
 
 <!-- Header -->
+<header id="top" class="header fixed-top">
+  <div class="container">
+              <h1 class="logo float-left">
 
-  <header id="HOME">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <a class="scrollto" href="#aboutme">
+                      <img id="logo-image" class="logo-image" src="images/logo2.png" alt="Logo">
+                  </a>
 
-      <a class="navbar-brand" href="#">
-        <img src="images/test logo.png" alt="">
-      </a>
+              </h1><!--//logo-->
+              <nav id="main-nav" class="main-nav navbar-light navbar-expand-md" role="navigation">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="navbar-collapse collapse justify-content-end" id="navbar-collapse">
+                      <ul class="nav navbar-nav">
+                          <li class="nav-item"><a class="nav-link scrollto" href="#aboutme">About Me</a></li>
+                          <li class="nav-item"><a class="nav-link scrollto" href="#experience">Experience</a></li>
+                          <li class="nav-item"><a class="nav-link scrollto" href="#education">Education</a></li>
+                          <li class="nav-item"><a class="nav-link scrollto" href="#skills">Skills</a></li>
+                          <li class="nav-item"><a class="nav-link scrollto" href="#trivia">Trivia</a></li>
+                          <li class="nav-item"><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                          <li class="nav-item last"><a class="nav-link scrollto" href="CV/CV - Robin Jacquet - nov 2018.pdf" target="_blank" style="color: #f74d65" onmouseover="this.style.color='#b2d0f8'" onmouseout="this.style.color='#f74d65'">CV</a></li><!-- CV opens in another page -->
+                      </ul><!--//nav-->
+                  </div><!--//navabr-collapse-->
+              </nav><!--//main-nav-->
+          </div>
+</header><!--//header-->
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
++<!-- ******Under construction ****** -->
+<section id="underconstruction" class="new-version offset-header has-pattern">
+<h2>New Version of my personal website. Still under construction</h2>
+<h3> More content and styling will soon arrive <h3>
+</section>
 
-     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-       <div class="navbar-nav">
-         <a class="nav-item nav-link" href="#home">Home</a>
-         <a class="nav-item nav-link" href="#aboutme">About Me</a>
-         <a class="nav-item nav-link" href="#jobs">Jobs</a>
-         <a class="nav-item nav-link" href="#education">Education</a>
-         <a class="nav-item nav-link" href="#skills">Skills</a>
-         <a class="nav-item nav-link" href="#contact">Contact</a>
-         <a class="nav-item nav-link" href="CV/CV - Robin Jacquet - nov 2018.pdf" target="_blank" style="color: #f74d65" onmouseover="this.style.color='#b2d0f8'" onmouseout="this.style.color='#f74d65'">CV</a> <!-- CV opens in another page -->
-       </div>
-     </div>
-   </nav>
-  </header>
+<!-- ******About Me****** -->
+<section id="aboutme" class="aboutme section has-pattern-1">
+    <div class="container">
+        <div class="row">
+            <div class="team col-md-6 col-12 mr-auto ml-auto">
+                    <div class="member col-lg-6 col-12 text-center">
+                        <img class="profile-pic" src="images/profilepic.jpg" alt="profile picture" />
+                    </div><!--//member-->
+                    <div id="center-presentationtext"> <span id="textederoulant">👋</span></div>
 
-<!-- ABOUT ME -->
-<div id="aboutme" class="row">
+<!-- Script -->
+                    <script type="text/javascript" src="JS/presentationtext.js"></script>
+            </div><!--//team-->
 
-  <div class="col-sm-4">
-    <img src="images/profilepic.jpg" alt="profile picture" class="profilepic" />
-  </div>
+            <div class=" col-md-6 col-12 mr-auto ml-auto">
+                <h2 class="title text-center">About me</h2>
+                <p> An already accomplished legal & compliance manager - years in startup shall be counted as "dog" years - I am looking for new challenges, either in Consulting or as team manager of an operational teams.</p>
+                <p>I am <strong>curious</strong> - as my trying to code this website proves - and in the end it allows me to always learn new things, and to find solutions.</p>
+                <p> <strong>Efficiency</strong> is key. I strive for the best possible resutls but think we should settle for the next best option if it works as fine, protects the company and the next one takes 15 more hours to achieve.</p>
+                <p> Finally, <strong>communication</strong> is essential : to argue my position, to explain to employees the "why", etc. I'm always available to answer questions or discuss issues.</p>
 
-  <div class="col-sm-8" id="verticalalign">
-    <h3> Hello </br><span id="textederoulant">👋</span></h3>
-  </div>
+            </div><!--//content-->
 
+        </div><!--//row-->
+    </div><!--//container-->
+</section><!--//aboutme-->
+
+
++<!-- ******EXPERIENCE****** -->
+<section id="experience" class="experience section has-pattern">
+  <div> <h2 id="xp"> Experience </h2> </div>
+    <div class="container">
+        <div class="row">
+          <div id="koosmik-image" class="col-md-6 col-12 order-md-1">
+              <div>
+                  <img src="images/koosmik.jpg" alt="Koosmik" class="job-pic">
+              </div>
+
+              <div class="overlay">
+                <div class="text">
+                  <h5> Koosmik </h5>
+                  <h6> Legal & Compliance Manager </h6>
+                  <h6> Jan. 2018 - present </h6>
+              </div>
+            </div>
+          </div><!--//image-->
+
+            <div class=" col-md-6 col-12 order-md-12 overflow">
+                <h5 class="intro">Koosmik</h5>
+                <ul>
+                  <li>Authorisation files to become electronic money institutions in Luxembourg (CSSF) and West Africa (BCEAO)</li>
+                  <li> Design and implementation of the risk mapping and control plan</li>
+                  <li>Writing of the procedures (Internal Control, AML/CTF & KYC, Complaint handling, IT Security, Fraud & Corruption...)</li>
+                  <li>Running the selection process for the internal and external audit services and cloud provider.</li>
+                  <li>Close cooperation with the IT and client support teams on GDPR and IT Security issues.</li>
+                  <li>Daily review of the client database (name screening, transaction & fraud monitoring)</li>
+                  <li>Drafting and negotiation of agreements with providers and business partners</li>
+                  <li>Organisation of the AGM/EGM and BoD meetings</li>
+                </ul>
+            </div><!--//content-->
+        </div><!--//row-->
+    </div><!--//container-->
+
+    <div class="container">
+        <div class="row">
+
+          <div id="amundi-image" class="col-md-6 col-12 order-md-1">
+              <div>
+                  <img src="images/amundi.jpg" alt="Amundi" class="job-pic">
+              </div>
+
+              <div class="overlay">
+                <div class="text">
+                  <h5>Amundi Luxembourg</h5>
+                  <h6>Compliance Officer</h6>
+                  <h6>Oct. 2015 - Dec. 2017</h6>
+              </div>
+            </div>
+          </div><!--//image-->
+
+            <div class=" col-md-6 col-12 order-md-12 overflow">
+                <h5 class="intro">Amundi</h5>
+                <ul>
+                  <li>Monitoring and Due diligence on delegated activities (Distribution, Custodians, Transfer Agents)</li>
+                  <li>Preparation of bribery audit (gap analysis, processes updates): certification ISO 37001 delivered; Implementation of
+new regulations (UCITS V, AML IV, MiFID II, Volcker); Analysis reports on the legislations of Chile and Uruguay</li>
+                  <li>Review of contractual and marketing documentations; Complaints handling</li>
+                  <li>Compliance risk mapping; Periodical controls; Quarterly compliance reporting to the Boards of Directors</li>
+                  <li>Advice to senior management and group employees on compliance issues; Animation of training sessions</li>
+                </ul>
+            </div><!--//content-->
+        </div><!--//row-->
+    </div><!--//container-->
+
+</section><!--//experience-->
+
+
+
+
+<!-- ******EDUCATION****** -->
+<!-- ******EDUCATION****** -->
+<section id="education" class="education section has-pattern-1">
+  <h2 class="text-center"> Education </h2>
+
+  <div>
+  	<div class="row">
+  		<div class="col-md-4">
+  			<h5 class="margin-school">House of Training</h5>
+  			<p class="margin-school">	2017	</p>
+  		</div>
+
+    	<div class="col-md-8">
+  			<p> <strong>M1 “Compliance – Fundamentals” (Certificate)</strong>
+  			<span> 92%</span>
+  			</p>
+  		</div>
+    </div>
+
+    <div>
+          <div class="row">
+            <div class="col-md-4">
+              <h5 class="margin-school">Audencia Nantes & Deusto Bilbao & Bradford School of Management</h5>
+              <p class="margin-school">	2014-2015	</p>
+            </div>
+            <div class="col-md-8">
+      <p> <strong>MSc in European and International Business Management</strong>
+      </br>Strategy, Marketing, Project & Change Management, Corporate Finance, M&A, Accounting
+      </br>Thesis on the effects of sharing a common language on trade relationships</p>
+    </div>
 </div>
 
-<!-- JS texte déroulant -->
-<script>
-  var texts = ["I am Robin", "A Legal & Compliance Guy", "Looking for new opportunities"];
-var count = 0;
-function changeText() {
-    $("#textederoulant").text(texts[count]);
-    count < 3 ? count++ : count = 0;
-}
-setInterval(changeText, 1500);
-</script>
+<div>
+      	<div class="row">
+      		<div class="col-md-4">
+      			<h5 class="margin-school">University College London
+            </br>(Erasmus exchange from Assas)</h5>
+      			<p class="margin-school">	2013 - 2014	</p>
+      		</div>
 
-<!-- JOBS -->
-<div class="row">
-  <div id="jobs" class="col-sm-9">
-    <h3> Jobs </h3>
-
-    <div id="koosmik" class="container">
-      <img src="images/koosmik.jpg" alt="Koosmik" class="jobpic" />
-      <div class="overlay">
-        <div class="text">
-          <h4> Koosmik </h4>
-          <h5> Legal & Compliance Manager </h5>
-          <h6> Jan. 2018 - present </h6>
+        	<div class="col-md-8">
+      			<p> <strong>Master I in English Law</strong>
+            </br>Corporate Insolvency, Company Law, Tort Law, Contract Law</p>
+      		</div>
         </div>
-      </div>
+
+        <div>
+                	<div class="row">
+                		<div class="col-md-4">
+                			<h5 class="margin-school">Université Paris II Panthéon – Assas</h5>
+                			<p class="margin-school">	2010 - 2013	</p>
+                		</div>
+
+                  	<div class="col-md-8">
+                			<p> <strong>Licence en Droit (LLB)</strong>
+                      </br>European Law, Company Law, Contract Law, International Public Law, Administrative Law</p>
+                		</div>
+                  </div>
+
+        </section>
+
++<!-- ******SKIlLS****** -->
+<section id="skills" class="skills section has-pattern">
+      <div class="container">
+           <h2 class="title text-center">Skills</h2>
+           <div class="price-cols row">
+              <div class="items-wrapper col-lg-10 col-12 ml-lg-auto mr-lg-auto">
+                  <div class="row">
+                      <div class="item price-1 col-md-4 col-12 text-center">
+                          <div class="item-inner">
+                              <div class="heading">
+                              <h3 class="title">IT Skills</h3>
+                              </div>
+                              <div class="content">
+                                  <ul class="list-unstyled feature-list">
+                                      <li>Strong Pack Office skills</li>
+                                      <li>Slack, Trello, Wiki</li>
+                                      <li> Coding this site with HTML, CSS, JS & Bootstrap</li>
+                                      <li> Objective: Python</li>
+                                  </ul>
+                              </div><!--//content-->
+                              <div class="ribbon">
+                                  <div class="text">Sought after</div>
+                              </div><!--//ribbon-->
+                          </div><!--//item-inner-->
+                      </div><!--//item-->
+
+                      <div class="item price-2 col-md-4 col-12 text-center au-dessus">
+                          <div class="item-inner">
+                              <div class="heading">
+                              <h3 class="title">Skills</h3>
+                              </div>
+                              <div class="content">
+                                  <ul class="list-unstyled feature-list">
+                                      <li>Curiosity always helps</li>
+                                      <li>Team Engagement</li>
+                                      <li>Communication with third parties</li>
+                                      <li>#Fintech & #AssetManagement </li>
+                                      <li>#Legal & #Compliance</li>
+                                  </ul>
+                              </div><!--//content-->
+                          </div><!--//item-inner-->
+                      </div><!--//item-->
+
+                      <div class="item price-3 col-md-4 col-12 text-center en-dessous">
+                          <div class="item-inner">
+                              <div class="heading">
+                                  <h3 class="title">Languages</h3>
+                              </div>
+                              <div class="content">
+                                  <ul class="list-unstyled feature-list">
+                                      <li><strong>French</strong> : Mother Tongue</li>
+                                      <li><strong>English</strong> : Fluent</li>
+                                      <li><strong>Spanish</strong> : Working Proficiency</li>
+                                  </ul>
+
+                              </div><!--//content-->
+                          </div><!--//item-inner-->
+                      </div><!--//item-->
+                  </div><!--//row-->
+              </div><!--//items-wrapper-->
+          </div><!--//row-->
+      </div><!--//container-->
+  </section><!--//skills-->
+
+
+  <!-- ******TRIVIA****** -->
+<section id="trivia" class="trivia section has-pattern-1">
+
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12 text-center">
+                      <div class="work_title  wow  ">
+                          <h2>Trivia</h2>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                <div class="col-md-5 col-12">
+                  <h4>📚 Livres</h4>
+                  <ul style="padding-left: 5px;">
+                    <li style="list-style-type: none;">Current Reading : Swann's way - Proust</li>
+                    <li style="list-style-type: none;">Next Reading : Go tell it on the mountain - J. Baldwin</li>
+                    <li style="list-style-type: none;">Like J. Lartéguy's & J. Franzen's books</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 col-12">
+                  <h4>😀 Activities</h4>
+                  <ul style="padding-left: 5px;">
+                    <li style="list-style-type: none;">Yoga</li>
+                    <li style="list-style-type: none;">Eating</li>
+                    <li style="list-style-type: none;">Drinking Coffee & Tea</li>
+                  </ul>
+                </div>
+                <div class="col-md-4 col-12">
+                  <h4>🎥 Cinéma</h4>
+                  <ul style="padding-left: 5px;">
+                    <li style="list-style-type: none;">Lost in Translation – Sofia Coppola</li>
+                    <li style="list-style-type: none;">La Grande Bellezza – Paolo Sorrentino</li>
+                    <li style="list-style-type: none;">Casablanca – Michael Curtiz</li>
+
+                  </ul>
+                </div>
+              </div>
+</section>
+
+<!-- ******CONTACT****** -->
+<section id="contact" class="contact section has-pattern">
+    <div class="container">
+        <h3 class="title text-center">Contact</h3>
+        <p class="text-center">Let's be in touch and discuss opportunities together !</p>
+        <button><a href="CV/CV - Robin Jacquet - nov 2018.pdf" target="_blank" style="color: #f74d65" onmouseover="this.style.color='#b2d0f8'" onmouseout="this.style.color='#f74d65'">Download my CV</a></button>
+      <p class="text-center">👇 Follow me or send me a mail 👇</p>
     </div>
+        <div class="text-center">
+             <ul class="social-icons list-inline">
+                <li class="list-inline-item"><a href="https://www.linkedin.com/in/robin-jacquet" target="_blank" id="linkedin" ><i class="fa fa-linkedin"></i></a></li>
+                <li class="list-inline-item"><a href="mailto:robin.jacquet@icloud.com?subject=contact from website" id="envelope"><i class="fa fa-envelope"></i></a></li>
+                <li class="list-inline-item"><a href="https://github.com/robinjacquet" target="_blank" id="github"><i class="fa fa-github"></i></a></li>
+            </ul><!--//social-icons-->
+        </div><!--//row-->
+    </div><!--//container-->
+</section><!--//contact-->
 
-    <div id="amundi" class="container">
-      <img src="images/amundi.jpg" alt="Amundi" class="jobpic" />
-      <div class="overlay">
-        <div class="text">
-          <h4> Amundi Luxembourg </h4>
-          <h5> Compliance Officer </h5>
-          <h6> Oct. 2015 - Dec. 2017 </h6>
-        </div>
-      </div>
-    </div>
-
-  <!--  <div id="studentjobs" class="container">
-      <img src="https://media.giphy.com/media/xT8qBv8bcQc4gcgAWA/giphy.gif" alt="StudentJobs" class="jobpic" />
-      <div class="overlay">
-        <div class="text">
-          <p>You never know when lawn mowing can come in handy </p>
-          <p> Teen Years </p>
-           </div>
-      </div>
-    </div> -->
-</div>
-
-<!-- skills -->
-  <div id="skills" class="col-sm-3">
-    <h3> Skills </h3>
-      <p> #Legal #Compliance </p>
-      <p> #Fintech </p>
-      <p> #Asset Mangement </p>
-      <P> #Operations </p>
-      <p> #Communication </p>
-    </br>
-    </br>
-    </br>
-
-
-    <h3> Languages </h3>
-      <p> French : Native </p>
-      <p> English: Fluent </p>
-      <p> Spanish : Working Proficiency </p>
-  </div>
-
-
-</div>
-
-<!-- Education -->
-<div class="row">
-  <div id="education" class="col-sm-9">
-    <h3> Education </h3>
-
-    <div id="HOT" class="container">
-      <h4> 2017 : M1 “Compliance – Fundamentals” </h4>
-      <h5> House of Training </h5>
-    </div>
-
-      <div id="EIBM" class="container">
-        <h4> 2014-2015 : MSc in European and International Business Management </h4>
-        <h5> Audencia Nantes & Universidad de Deusto & Bradford School of Management </h5>
-      </div>
-
-      <div id="UCL" class="container">
-        <h4> 2013-2014 : Master I in English Law / Certificate in English Legal Studies </h4>
-        <h5> University College London (Erasmus Exchange) </h5>
-      </div>
-
-      <div id="ASSAS" class="container">
-        <h4> 2010-2013 : Licence en Droit (LLB) </h4>
-        <h5> Université Paris II Panthéon-Assas </h5>
-      </div>
-    </div>
-
-
-    <!-- IT Skills -->
-    <div id="itskills" class="col-sm-3">
-      <h3> IT Skills </h3>
-      <p> learning to code </p>
-      <p> this website is proof <p>
-      <p> Otherwise : Office, Slack, Trello, Confluence...  </p>
-    </div>
-
-</div>
-
-
-
-<footer id="contact">
-  <div class="row">
-    <div class="col">
-    <p> <a href="https://www.linkedin.com/in/robin-jacquet" target="_blank">
-      <img alt="" src="https://s3.amazonaws.com/flashissue/dJtLdIsbRAix3zQhvygP_linkedin_icon_dark_hover-5be7d72ca83a10c0c76c32d141b0b828.png"
-        style="height:16px; width:16px" />
-        Let's connect on LinkedIn </a> </p>
-    </div>
-    <div class="col">
-    <p> <a href="mailto:robin.jacquet@icloud.com?">
-      <i class="material-icons"> email </i>
-      Contact me by mail </a></p>
-    </div>
+<footer class="footer">
+  <div class="container text-center">
+     <small class="copyright"> Made by Robin Jacquet &copy; 2018 </small>
   </div>
 </footer>
 
